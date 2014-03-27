@@ -133,6 +133,8 @@ footer {
 footer a { color: #fff; }
 footer a:hover { color: #999; font-weight: bold; }
 
+footer h4, footer label { color: #6f6f6f; }
+
 
 .copyright { text-align: center; padding: 10px 0; font-size: .8em;}
 @media only screen and (min-width: 48em){
@@ -237,9 +239,9 @@ footer a:hover { color: #999; font-weight: bold; }
     -ms-transition: all .3s;
 }
  
-.icons a.twitter { background: url(../img/social-icons/twitter.png) left top no-repeat; }
-.icons a.rss { background: url(../img/social-icons/rss.png) left top no-repeat; }
-.icons a.facebook { background: url(../img/social-icons/facebook.png) left top no-repeat; }
-.icons a.googleplus { background: url(../img/social-icons/googleplus.png) left top no-repeat; }
+.icons a.twitter { background: url(../img/twitter.png) left top no-repeat; }
+.icons a.rss { background: url(../img/rss.png) left top no-repeat; }
+.icons a.facebook { background: url(../img/facebook.png) left top no-repeat; }
+.icons a.googleplus { background: url(../img/googleplus.png) left top no-repeat; }
  
 .icons a:hover { background-position: left -34px; }
