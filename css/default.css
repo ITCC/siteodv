@@ -6,6 +6,9 @@ body { -webkit-animation: bugfix infinite 1s; }
   to { padding: 0; } 
 }
 
+*{font-family: "Open Sans"!important;}
+
+
 nav{
 	display: block;
 }
@@ -43,6 +46,10 @@ nav ul li a {
 	text-align: center;
 }
 
+.nav-main .active {
+	border-top: 4px solid #008cba;
+}
+
 .nav-main ul li a {
 	width: 120px;
 	padding: 5px 0;
@@ -51,7 +58,7 @@ nav ul li a {
 	margin-left: 15px;
 	padding: 5px 0;
 }
-.nav-footer ul li:before {
+.nav-footer ul li:hover::before {
 	content: " ";
 	display: inline-block;
 	position: relative;
@@ -65,19 +72,43 @@ nav ul li a {
 	margin: 0 auto;
 }
 
+.list-links, .encuensta, .novedades {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #c2c2c2;
+	padding: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
 .list-links ul {
 	list-style: none;
 }
 .list-links ul li {
 	padding: 2px;
+	text-align: center;
 }
 
+.novedades ul {margin: 0; font-size: .8em;}
+.novedades ul li {
+	list-style: none;
+	border-bottom: 1px solid #c2c2c2;
+	padding-bottom: 5px;
+	margin-top: 10px;
+}
+
+.novedades ul li a:hover{
+	color: #f0a000;
+}
+
+.texto-cliente { font-size: .8em; }
+
 .img-link-logo {
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	display: inline-block;
 	padding: 3px;
-	border-radius: 4px;
-	box-shadow: 1px 1px #ccc;
+	/*border-radius: 4px;
+	box-shadow: 1px 1px #ccc;*/
 }
 
 .img-link-logo img {
@@ -122,6 +153,16 @@ nav ul li a {
 	text-shadow: 1px 1px #000;
 }
 
+.texto-naranja {color: #f0a000;}
+
+.titulo-encuesta {
+	color: #f0a000;
+}
+
+.respuestas-encuesta ul li {
+	list-style: none;
+}
+
 footer {
 	display: block;
 	background: #000;
@@ -131,9 +172,9 @@ footer {
 }
 
 footer a { color: #fff; }
-footer a:hover { color: #999; font-weight: bold; }
+footer a:hover { color: #f0a900; font-weight: 400; }
 
-footer h4, footer label { color: #6f6f6f; }
+footer h4, footer label { color: #f0a900; }
 
 
 .copyright { text-align: center; padding: 10px 0; font-size: .8em;}
@@ -239,9 +280,9 @@ footer h4, footer label { color: #6f6f6f; }
     -ms-transition: all .3s;
 }
  
-.icons a.twitter { background: url(../img/twitter.png) left top no-repeat; }
-.icons a.rss { background: url(../img/rss.png) left top no-repeat; }
-.icons a.facebook { background: url(../img/facebook.png) left top no-repeat; }
-.icons a.googleplus { background: url(../img/googleplus.png) left top no-repeat; }
+.icons a.twitter { background: url(../img/social-icons/twitter.png) left top no-repeat; }
+.icons a.rss { background: url(../img/social-icons/rss.png) left top no-repeat; }
+.icons a.facebook { background: url(../img/social-icons/facebook.png) left top no-repeat; }
+.icons a.googleplus { background: url(../img/social-icons/googleplus.png) left top no-repeat; }
  
 .icons a:hover { background-position: left -34px; }
